@@ -1,6 +1,7 @@
 'use client'
 
 import { useRef } from 'react'
+import { createPortal } from 'react-dom'
 import XButton from '@iconscout/react-unicons/icons/uil-x'
 
 import Project1 from '@/components/Projects/components/Project1'
@@ -18,7 +19,7 @@ export default function Modal({ project, setOpenModal }) {
     }
   }
 
-  return (
+  return createPortal(
     <div className='modal' onClick={isClicked}>
       <div ref={boxRef} className='box'>
         <XButton
@@ -32,6 +33,7 @@ export default function Modal({ project, setOpenModal }) {
         <div className='content'>{project === 'project3' && <Project3 />}</div>
         <div className='content'>{project === 'project4' && <Project4 />}</div>
       </div>
-    </div>
+    </div>,
+    document.getElementById('modal')
   )
 }

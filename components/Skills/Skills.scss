@@ -246,6 +246,10 @@
 }
 
 @media screen and (max-width: $tablet) {
+  .skills.container {
+    margin-top: 0;
+  }
+  
   .skills-right {
     align-items: center;
     flex-direction: column;

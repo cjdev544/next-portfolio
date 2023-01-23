@@ -3,12 +3,10 @@
 .footer {
   align-items: center;
   display: flex;
-  margin-top: -7rem;
-  margin: -0.5rem -3.5rem;
   position: relative;
 
   &-background {
-    width: 100%;
+    max-width: 100vw;
   }
 
   &-content {

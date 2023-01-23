@@ -46,17 +46,16 @@
 
       @media screen and (max-width: $laptop) {
         background: $orange;
-        left: 100vw;
+        left: 0;
         opacity: 0.9;
         overflow: hidden;
         position: absolute;
         transition: all 0.4s ease-in-out;
-        top: 5rem;
-        width: 100vw;
+        top: -120vh;        
         z-index: 1000;
 
         &.isOpen {
-          left: 0;
+          top: 5rem;
 
           html,
           .App {

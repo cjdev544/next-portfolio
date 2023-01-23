@@ -58,8 +58,8 @@ export default function About({ isDarkMode }) {
         </div>
       </div>
       <div className='about-right'>
-        <Image src={Vector1} alt='vector 1' />
-        <Image src={Vector2} alt='vector 2' />
+        {/* <Image src={Vector1} alt='vector 1' />
+        <Image src={Vector2} alt='vector 2' /> */}
         <Image src={FotoCj} alt='Foto CjDev544' />
         <motion.div
           initial={{ left: '-26%' }}
@@ -71,7 +71,7 @@ export default function About({ isDarkMode }) {
 
         <motion.div
           className='about-right__floting'
-          initial={{ top: '4rem', left: '74%' }}
+          initial={{ top: '2rem', left: '50%' }}
           whileInView={{ top: '4rem', left: '50%' }}
           transition={transition}
         >
